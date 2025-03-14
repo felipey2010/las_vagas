@@ -2,7 +2,34 @@
 
 ![Home Page](/public/assets/images/home.png)
 
-Um projeto voltado para anúncio de vagas.
+## Tabela de Conteúdos
+
+- [Descrição](#descrição)
+- [Features](#features)
+- [Stack de Tecnologias](#stack-de-tecnologias)
+- [Inicializar o projeto](#inicializar-o-projeto)
+- [Contribuindo](#contribuindo)
+
+## Descrição
+
+Este sistema visa servir como uma plataforma de busca de empregos, permitindo que os usuários encontrem vagas de trabalho de acordo com suas habilidades e preferências. Empresas podem anunciar suas vagas e buscar candidatos qualificados.
+![Sobre vaga](/public/assets/images/job.png)
+
+## Features
+
+- Busca ou filtro de vagas
+- Busca de empresas
+- Cadastro de usuários
+- Cadastro de empresas
+- Aplicação para vagas diretamente pela plataforma
+
+## Stack de Tecnologias
+
+- Next.js
+- Tailwind CSS
+- Flowbite UI
+- Lucide Icons
+- Next Themes
 
 ## Inicializar o projeto
 
