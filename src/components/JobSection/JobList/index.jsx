@@ -1,4 +1,4 @@
-import EmptyContent from '../EmptyContent'
+import EmptyContent from '../EmptyJob'
 import JobCard from '../JobCard'
 
 function JobList({ jobs }) {

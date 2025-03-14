@@ -1,6 +1,6 @@
 'use client'
 import { memo, useEffect } from 'react'
-import Content from './components/Content'
+import Content from './PaginationContainer'
 
 const CustomPagination = ({ filter, setFilter }) => {
   if (filter.totalPages <= 1) return null

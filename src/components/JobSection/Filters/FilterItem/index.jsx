@@ -1,5 +1,5 @@
-import RenderCheckbox from './components/RenderCheckbox'
-import RenderSelect from './components/RenderSelect'
+import RenderCheckbox from './RenderCheck'
+import RenderSelect from './RenderSelect'
 
 function FilterItem({ filter }) {
   const { title, type, items } = filter

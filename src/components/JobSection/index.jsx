@@ -1,7 +1,7 @@
-import Filters from './components/Filters'
-import JobList from './components/JobList'
-import PopularSearch from './components/PopularSearch'
-import Searchbar from './components/Searchbar'
+import Filters from './Filters'
+import JobList from './JobList'
+import PopularSearch from './PopularSearch'
+import Searchbar from './Searchbar'
 import { jobs, searchTerms } from 'data/jobs'
 
 function JobSection() {

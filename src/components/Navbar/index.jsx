@@ -1,32 +1,33 @@
 'use client'
 import ThemeToggler from 'components/ThemeToggler'
 import { navLinks } from 'constants/index'
-import { Button } from 'flowbite-react'
-import Link from 'next/link'
+import { Button, Navbar } from 'flowbite-react'
 
-function Navbar() {
+function NavbarComponent() {
   return (
-    <div className='flex h-16 w-full items-center justify-between border-b border-gray-300/50 px-8 dark:border-gray-800/60'>
-      <div className='flex w-fit items-center text-3xl font-bold'>
-        <span className='text-purple-700 dark:text-purple-600'>Roraima</span>
+    <Navbar fluid rounded className='!bg-slate-200 dark:!bg-gray-900'>
+      <Navbar.Brand href='/' className='pl-4 text-3xl font-bold'>
+        <span className='text-purple-700 dark:text-purple-600'>Las</span>
         <span className='text-purple-500 dark:text-purple-400'>Vagas</span>
-      </div>
-      <ul className='hidden items-center gap-4 text-black/85 dark:text-white/85 md:flex'>
-        {navLinks.map((link) => (
-          <li
-            key={link.title}
-            className='text-sm font-medium hover:text-purple-600 hover:dark:text-purple-600'
-          >
-            <Link href={link.path}>{link.title}</Link>
-          </li>
-        ))}
-      </ul>
-      <div className='flex items-center gap-4'>
+      </Navbar.Brand>
+      <div className='flex items-center gap-4 pr-4 md:order-2'>
         <ThemeToggler />
         <Button color='purple'>Acessar</Button>
+        <Navbar.Toggle />
       </div>
-    </div>
+      <Navbar.Collapse>
+        {navLinks.map((link) => (
+          <Navbar.Link
+            href={link.path}
+            key={link.title}
+            className='text-base font-medium hover:!text-purple-600 hover:dark:!text-purple-500'
+          >
+            {link.title}
+          </Navbar.Link>
+        ))}
+      </Navbar.Collapse>
+    </Navbar>
   )
 }
 
-export default Navbar
+export default NavbarComponent

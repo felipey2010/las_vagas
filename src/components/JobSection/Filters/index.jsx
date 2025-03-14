@@ -1,6 +1,6 @@
 'use client'
 import { filterList } from 'constants/index'
-import FilterItem from '../FilterItem'
+import FilterItem from './FilterItem'
 
 function Filters() {
   return (

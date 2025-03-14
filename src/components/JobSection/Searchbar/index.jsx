@@ -7,7 +7,7 @@ function Searchbar() {
           <FaSearch className='text-purple-600 dark:text-purple-400' />
           <input
             type='text'
-            placeholder='Procurar pelo título'
+            placeholder='Procurar vagas, empresas, ...'
             className='group h-14 w-full rounded-lg border-0 bg-transparent text-gray-700 outline-none focus:ring-0 dark:text-gray-300'
           />
         </div>

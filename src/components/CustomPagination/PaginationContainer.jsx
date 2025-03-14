@@ -1,6 +1,6 @@
-import NextPage from '../NextPage'
-import PageSelector from '../PageSelector'
-import PreviousPage from '../PreviousPage'
+import NextPage from './NextPage'
+import PageSelector from './PageSelector'
+import PreviousPage from './PreviousPage'
 
 function Content({ filter, setFilter }) {
   return (

@@ -1,9 +1,15 @@
 'use client'
 import { MdBusinessCenter, MdLocationOn, MdNewspaper } from 'react-icons/md'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 function JobCard({ job }) {
   const { title, logo, company, workStatus, contractStatus } = job
+  const router = useRouter()
+
+  const handleOpenJob = () => {
+    router.push(`/vagas/${job.id}`)
+  }
 
   return (
     <div className='col-span-12 w-full rounded-lg border border-gray-200 bg-white p-8 dark:border-gray-700 dark:bg-gray-800 md:col-span-6'>
@@ -37,6 +43,7 @@ function JobCard({ job }) {
         <div className='flex w-full items-center justify-end'>
           <button
             type='button'
+            onClick={handleOpenJob}
             className='h-10 w-40 rounded-md bg-indigo-600 text-lg font-bold text-white hover:bg-indigo-500'
           >
             Ver detalhes

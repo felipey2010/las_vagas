@@ -1,5 +1,4 @@
-import { Footer, Navbar } from 'components'
-import { ThemeProvider } from 'contexts'
+import MainLayout from 'components/Layouts/MainLayout'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import 'styles/globals.css'
@@ -22,17 +21,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en'>
-      <body className={poppins.className} suppressHydrationWarning={true}>
-        <ThemeProvider>
-          <main className='flex h-full w-full items-center justify-center bg-slate-200 dark:bg-gray-900'>
-            <div className='flex h-full w-full max-w-[1980px] flex-col'>
-              <Navbar />
-              <div className='min-h-[calc(100vh-64px)] w-full'>{children}</div>
-              <Footer />
-            </div>
-          </main>
-        </ThemeProvider>
+    <html lang='pt-BR' suppressHydrationWarning>
+      <body className={poppins.className}>
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   )

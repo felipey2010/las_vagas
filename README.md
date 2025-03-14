@@ -1,31 +1,60 @@
-## RORAIMA VAGAS - FRONT
+## LAS VAGAS - FRONT
 
-Um projeto voltado para anúncio de vagas no estado de Roraima
+![Home Page](/public/assets/images/home.png)
+
+Um projeto voltado para anúncio de vagas.
 
 ## Inicializar o projeto
 
-Para iniciar o projeto, siga as instruções abaixo
+Para iniciar o projeto, siga as instruções abaixo:
 
-- instale as dependências:
+1. Instale as dependências:
 
-```bash
-npm install
-# ou
-yarn install
-# ou
-pnpm install
-```
+   ```bash
+   npm install
+   # ou
+   yarn install
+   # ou
+   pnpm install
+   ```
 
-- inicie o projeto executando um dos comandos abaixo dependendo do pacote que tem instalado
+2. Inicie o projeto executando um dos comandos abaixo, dependendo do gerenciador de pacotes que você tem instalado:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   # ou
+   pnpm dev
+   # ou
+   bun dev
+   ```
 
-- Abra o link [http://localhost:3000](http://localhost:3000) com seu navegador para acessar o projeto.
+3. Abra o link [http://localhost:3000](http://localhost:3000) no seu navegador para acessar o projeto.
+
+## Contribuindo
+
+Para contribuir com este projeto, siga as etapas abaixo:
+
+1. Faça um fork do repositório.
+2. Crie uma nova branch com a sua feature ou correção de bug:
+
+   ```bash
+   git checkout -b minha-feature
+   ```
+
+3. Faça as alterações necessárias e commit suas mudanças:
+
+   ```bash
+   git commit -m 'Adiciona minha nova feature'
+   ```
+
+4. Envie suas alterações para o repositório remoto:
+
+   ```bash
+   git push origin minha-feature
+   ```
+
+5. Abra um Pull Request no repositório original.
+
+Agradecemos suas contribuições!

@@ -1,4 +1,5 @@
-import { HeroSection, JobSection } from 'components'
+import HeroSection from 'components/HeroSection'
+import JobSection from 'components/JobSection'
 
 function HomeView() {
   return (
