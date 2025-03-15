@@ -1,7 +1,8 @@
 import MainLayout from 'components/Layouts/MainLayout'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
-import 'styles/globals.css'
+import 'styles/output.css'
+import { cn } from 'utils'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -11,7 +12,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Roraima Vagas',
+  title: 'Las Vagas',
   description: 'Plataforma de busca de empregos',
 }
 
@@ -22,7 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='pt-BR' suppressHydrationWarning>
-      <body className={poppins.className}>
+      <body
+        className={cn(
+          'min-h-screen w-full bg-black antialiased',
+          poppins.className,
+          poppins.variable
+        )}
+      >
         <MainLayout>{children}</MainLayout>
       </body>
     </html>

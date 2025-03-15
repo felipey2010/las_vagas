@@ -22,6 +22,7 @@ Este sistema visa servir como uma plataforma de busca de empregos, permitindo qu
 - Cadastro de usuários
 - Cadastro de empresas
 - Aplicação para vagas diretamente pela plataforma
+- Autenticação com google email
 
 ## Stack de Tecnologias
 
@@ -30,6 +31,7 @@ Este sistema visa servir como uma plataforma de busca de empregos, permitindo qu
 - Flowbite UI
 - Lucide Icons
 - Next Themes
+- Next Auth
 
 ## Inicializar o projeto
 
